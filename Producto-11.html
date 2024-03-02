@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adventhop</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" type="images/jpg" href="images/logo-adventhop.jpg" />
+  </head>
+
+  <body>
+    <header>
+      <button type="button" class="open_button">
+        <img src="images/Hamburguesa.png" class="imgheader" />
+      </button>
+      <a href="index.html">
+        <img src="images/logo-adventhop.jpg" class="imgheader" />
+        <span style="position: relative; top: -10px"> Adventhop </span></a>
+      <a
+        href="Inicio_sesion.html">
+        <img
+        src="images/usuario.png"
+        class="imgheader"
+        style="position: fixed; right: 40px;"
+      /><a />
+      <a
+      href="cesta.html">
+      <img
+        src="images/shopping-cart.png"
+        class="imgheader"
+        style="position: fixed; right: 0px;"
+      /></a>
+    </header>
+
+    <div class="sidebar" style="width: 25%;">
+      <button
+        type="button"
+        onClick="w3_close()"
+        class="sidebarelements close_button"
+      >
+        Cerrar
+      </button>
+      <div class="sidebarelements"><a href="index.html">Tendencias</a></div>
+      <div class="sidebarelements"><a href="Nuevo_Mexico.html">Nuevo México</a></div>
+      <div class="sidebarelements"><a href="Tropical.html">Tropical</a></div>
+      <div class="sidebarelements"><a href="Montana.html">Montaña</a></div>
+    </div>
+    <h1 id="nombre_producto">SZLX mochila de viaje para mujer</h1>
+    <p class="precio">31,99 €</p>
+    <a href="documents/caracterisitcas.docx" download="caracterisitcas.docx"><img src="images/mochila.jpg" class="imagen_producto"></a>
+    <div class="producto">
+        <span>4,8</span>
+        <img class="estrellas" src="images/Estrella_amarilla.png"/>
+        <img class="estrellas" src="images/Estrella_amarilla.png"/>
+        <img class="estrellas" src="images/Estrella_amarilla.png"/>
+        <img class="estrellas" src="images/Estrella_amarilla.png"/>
+        <img class="estrellas" src="images/Estrella_amarilla.png"/><br>
+        <p>
+        (Dale click a la imagen para descubrir todas sus carácteristicas)
+        Acerca de este producto:</br>
+        
+        Esta mochila está hecha de poliéster resistente al agua, buena permeabilidad al aire y disipación del calor con dos correas acolchadas</br>
+        para los hombros, ofrece un transporte liviano y de refuerzo de fuerza, alivia la presión de los hombros y se mantiene fresca cuando la llevas. por mucho tiempo. Y es resistente, firme y no se desvanece.</br> </br>
+        Video review del producto:</br>
+        <video width="400" controls>
+            <source src="videos/Probando la MOCHILA VIRALde Amazon!(720p).mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML.
+          </video></br>
+         <a href="https://www.youtube.com/watch?v=8ghOgnBREts"> Enlace al video. </a>    
+
+    </p>
+
+        
+    </div>
+    <div class="opinion">¿Qué te ha parecido este producto?</div>
+    <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+    </div>
+</br> </br>
+    <button class="cesta">Añadir a la cesta<img src="images/shopping-cart.png"></button>
+</br></br>
+  </body>
+
+  <script>
+    const sidebar = document.querySelector(".sidebar");
+    const open_btn = document.querySelector(".open_button");
+    const close_btn = document.querySelector(".close_button");
+
+    open_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+    close_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+  </script>
+</html>

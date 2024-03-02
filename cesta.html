@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adventhop</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" type="images/jpg" href="images/logo-adventhop.jpg" />
+  </head>
+
+  <body>
+    <header>
+      <button type="button" class="open_button">
+        <img src="images/Hamburguesa.png" class="imgheader" />
+      </button>
+      <a href="index.html">
+        <img src="images/logo-adventhop.jpg" class="imgheader" />
+        <span style="position: relative; top: -10px"> Adventhop </span></a>
+      <a
+        href="Inicio_sesion.html">
+        <img
+        src="images/usuario.png"
+        class="imgheader"
+        style="position: fixed; right: 40px;"
+      /><a />
+      <a
+      href="cesta.html">
+      <img
+        src="images/shopping-cart.png"
+        class="imgheader"
+        style="position: fixed; right: 0px;"
+      /></a>
+    </header>
+
+    <div class="sidebar" style="width: 25%;">
+      <button
+        type="button"
+        onClick="w3_close()"
+        class="sidebarelements close_button"
+      >
+        Cerrar
+      </button>
+      <div class="sidebarelements"><a href="index.html">Tendencias</a></div>
+      <div class="sidebarelements"><a href="Nuevo_Mexico.html">Nuevo México</a></div>
+      <div class="sidebarelements"><a href="Tropical.html">Tropical</a></div>
+      <div class="sidebarelements"><a href="Montana.html">Montaña</a></div>
+    </div>
+
+    <h1 style="margin-left:30px;">Cesta de la compra</h1></br>
+    <p style="margin-left:30px;">No tiene ningun producto</p></br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <p style="margin-left:30px;">>Total: 0,00€</p>
+    </br>
+    <button class="cesta">Tramitar pagos<img src="images/shopping-cart.png"></button>
+</body>
+  <script>
+    const sidebar = document.querySelector(".sidebar");
+    const open_btn = document.querySelector(".open_button");
+    const close_btn = document.querySelector(".close_button");
+
+    open_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+    close_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+  </script>
+</html>

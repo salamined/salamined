@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Amatic SC, sans-serif;
+  font-size: 11px;
+}
+
+header {
+  color: white;
+  font-size: 30px;
+  font-family: Blippo, fantasy;
+  height: 40px;
+  padding: 5px;
+  background-color: #6aa84fff;
+}
+header a {
+  color: white;
+  font-size: 30px;
+  font-family: Blippo, fantasy;
+  text-decoration: none;
+}
+.imgheader {
+  cursor: pointer;
+  height: 40px;
+}
+.elemento img {
+  margin-bottom: 5px;
+  margin-top: -15px;
+  max-width: 250px;
+  max-height: 130px;
+}
+
+h1 {
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: 1000;
+}
+
+.contenedor {
+  display: grid;
+  background-color: white;
+  padding: 10px;
+  gap: 10px 10px;
+}
+
+#precio {
+  text-align: right;
+  margin-top: -5px;
+  color: #0097a7;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.elemento {
+  background-color: lightgray;
+  padding: 5px;
+  width: 80%;
+  min-width: 100px;
+}
+#nombre {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.imagen_fondo {
+  overflow: auto;
+  background-repeat: repeat;
+  background-size: 150%;
+  background-image: url("../images/Fondo-usuario-1.jpg");
+  background-color: #cccccc;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  max-width: 200px;
+  min-width: 80px;
+  overflow: auto;
+  position: fixed !important;
+  z-index: 1;
+  display: none;
+}
+
+.sidebarelements {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  color: gray;
+  font-family: "Lucida Console", "Courier New", monospace;
+  transition: color 0.5s;
+}
+.sidebarelements a {
+  font-size: 20px;
+  color: gray;
+  text-decoration: none;
+}
+
+.sidebarelements:hover {
+  color: black;
+  background-color: honeydew;
+}
+
+.login-register {
+  margin: 0;
+  height: 400px;
+  width: 35%;
+  max-width: 400px;
+  min-width: 170px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.el1 {
+  font-weight: 900;
+  font-size: 30px;
+  padding: 10px;
+  height: 50px;
+  background-color: #6aa84fff;
+  color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.login-register input {
+  size: 15;
+  width: 50%;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 0px;
+  border-color: darkgray;
+}
+.login-register button {
+  padding: 10px;
+  background-color: lightgray;
+  color: white;
+  border-width: 0;
+  transition: background-color 250ms;
+}
+.login-register button:hover {
+  padding: 10px;
+  background-color: gray;
+  color: white;
+  border-width: 0;
+}
+
+@keyframes translateright {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+.estrellas {
+  margin-right: 0px;
+  width: 15px;
+}
+.rotar {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in;
+  font-size: 20px;
+  color: white;
+  width: fit-content;
+}
+
+.transladar_derecha {
+  animation-name: translateright;
+  animation-duration: 250ms;
+  display: block;
+}
+
+.open_button {
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.imagen_producto {
+  margin-top: 20px;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.producto {
+  margin-left: 50px;
+  margin-right: 20px;
+  width: 80%;
+  font-size: medium;
+}
+.producto span {
+  color: #cccccc;
+}
+
+#gorro {
+  transform: rotateY(0deg);
+  transition: transform 1000ms;
+}
+#gorro:hover {
+  transform: rotateY(180deg);
+}
+#nombre_producto {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.precio {
+  margin-left: 50px;
+  font-weight: 50;
+  font-size: 20px;
+  color: #0097a7;
+  text-decoration: underline;
+}
+
+.cesta {
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+  font-size: 30px;
+  color: #cc0000;
+  background-color: #f1c232ff;
+  padding: 10px;
+  font-weight: 1000;
+  border-radius: 5px;
+  transition: padding 200ms, bottom 200ms, right 200ms;
+}
+
+.cesta:hover {
+  background-color: rgb(222, 192, 102);
+  padding: 20px;
+  bottom: 190px;
+  right: 190px;
+}
+
+.cesta img {
+  position: relative;
+  top: 10px;
+  height: 40px;
+}
+.opinion {
+  font-weight: 1000;
+  font-size: 20px;
+  position: absolute;
+  bottom: 350px;
+  right: 270px;
+}
+
+.star-rating {
+  position: absolute;
+  bottom: 300px;
+  right: 340px;
+  rotate: 180deg;
+  display: inline-block;
+  font-size: 0;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.star-rating label:before {
+  content: "★";
+}
+
+.star-rating input:checked ~ label {
+  color: #f90;
+}
+@media only screen and (max-width: 1000px) {
+  .star-rating,
+  .opinion,
+  .cesta {
+    position: static;
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .elemento img {
+    margin-bottom: 5px;
+    margin-top: -15px;
+    max-width: 250px;
+    max-height: 100px;
+  }
+  body {
+  }
+  .triangulo-derecha {
+    display: none;
+  }
+  .cuadrado-derecha {
+    display: none;
+  }
+  .contenedor-2 {
+    display: none;
+  }
+  .contenedor {
+    grid-template-columns: 2fr 2fr;
+  }
+  .elemento {
+    margin-bottom: 20px;
+    height: 180px;
+  }
+  .elemento-descripcion {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+  }
+  .triangulo-derecha {
+    width: 0;
+    height: 0;
+    border-left: 80px solid #274e13;
+    border-bottom: 80px solid transparent;
+  }
+  .cuadrado {
+    background-color: #274e13;
+    width: 300px;
+    height: 80px;
+    font-size: large;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+  }
+  .contenedor-2 {
+    display: grid;
+    grid-template-columns: 300px 50px;
+    background-color: white;
+    gap: 0px;
+    background-image: url("../images/Fondo-usuario-1.jpg");
+    overflow: auto;
+    background-repeat: repeat;
+    background-size: 20%;
+  }
+
+  .contenedor {
+    grid-template-columns: auto auto auto auto;
+  }
+  .elemento {
+    height: 300px;
+  }
+  .elemento-descripcion {
+    margin: 10px;
+  }
+}
