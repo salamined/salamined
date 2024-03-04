@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adventhop</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" type="images/jpg" href="images/logo-adventhop.jpg" />
+  </head>
+
+  <body class="imagen_fondo">
+    <header>
+      <button type="button" class="open_button">
+        <img src="images/Hamburguesa.png" class="imgheader" />
+      </button>
+      <a href="index.html">
+        <img src="images/logo-adventhop.jpg" class="imgheader" />
+        <span style="position: relative; top: -10px"> Adventhop </span></a
+      >
+      <a href="Inicio_sesion.html"
+        ><img
+          src="images/usuario.png"
+          class="imgheader"
+          style="position: fixed; right: 40px"
+      /></a>
+      <a href="cesta.html">
+        <img
+          src="images/shopping-cart.png"
+          class="imgheader"
+          style="position: fixed; right: 0px"
+      /></a>
+    </header>
+
+    <div class="sidebar" style="width: 25%">
+      <button
+        type="button"
+        onClick="w3_close()"
+        class="sidebarelements close_button"
+      >
+        Cerrar
+      </button>
+      <div class="sidebarelements"><a href="index.html">Tendencias</a></div>
+      <div class="sidebarelements">
+        <a href="Nuevo_Mexico.html">Nuevo México</a>
+      </div>
+      <div class="sidebarelements"><a href="Tropical.html">Tropical</a></div>
+      <div class="sidebarelements"><a href="Montana.html">Montaña</a></div>
+    </div>
+    <div class="login-register">
+      <div class="el1">Iniciar sesión</div>
+      <form action="">
+        <br />
+        <label for="fname">Nombre de usuario:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Contraseña:</label><br />
+        <input type="password" id="lname" name="lname" /><br /><br />
+        <button type="submit" onclick="login()">Iniciar sesión</button>
+      </form>
+      <br />
+      <p style="color: gray">
+        ¿No tienes una cuenta? <br />
+        <a href="registrarse.html">Registrate</a>
+      </p>
+    </div>
+  </body>
+  <script src="../script/sidebar.js"></script>
+  <script src="../script/codigo.js"></script>
+</html>
